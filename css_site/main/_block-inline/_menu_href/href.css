@@ -1,0 +1,14 @@
+._href
+{
+	color:Black;
+	text-decoration: none;
+}
+.-href:hover
+{
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: none;
+	color: Red;
+}

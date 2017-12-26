@@ -1,0 +1,16 @@
+.main__regestration
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.-Red
+{
+	color: Red;
+	text-decoration: none;
+}
+.-Red:hover
+{
+	text-decoration: none;
+	color: Red;
+}

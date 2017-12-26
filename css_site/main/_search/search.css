@@ -1,0 +1,24 @@
+.Search
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.search
+{
+display: flex;
+margin-top: -10px;
+}
+.search_text
+{
+border: 0px;
+width: 30%;
+height: 80%;
+}
+.search_button
+{
+	height: 60%;
+	background: White;
+	border: 0px;
+	margin-top:-2px;
+}

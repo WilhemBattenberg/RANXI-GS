@@ -1,0 +1,10 @@
+.-bord
+{
+	display: flex;
+	justify-content: center;
+	color:Black;
+}
+.one
+{
+	margin-left: 30px;
+}

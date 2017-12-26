@@ -1,0 +1,33 @@
+.promo-picture
+{
+	background-size: auto;
+	position: relative;
+    width:  -webkit-fill-available;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: flex-start;
+	padding: 0px;
+	height: 70%;
+}
+.promo-overlay
+{	
+	color: Black;
+	position: absolute;
+	margin-left: 8px;
+	margin-right: 8px;
+	
+}
+.button-overlay
+{
+	border-radius: 0px;
+	display: block;
+	margin-top: 40px;
+	background-color: #9b2d30;
+	border-color:#9b2d30;
+}
+.text-overlay
+{
+	display: block;
+	margin-left: 5px;
+	margin-right: 5px;
+}
