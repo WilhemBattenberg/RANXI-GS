@@ -1,0 +1,41 @@
+.-Gray
+{
+	color: #ccc;
+}
+.-Gray_but
+{
+	color: #403a3a;
+	background-color: #ccc;
+	border-color: #ccc;
+}
+.-Green
+{
+	color:#88D4C6;
+}
+.-Green_but
+{
+	color: White;
+	background-color: #88D4C6;
+	border-color:#88D4C6;
+}
+.-Blue
+{
+	color:#6BD1E7;
+}
+.-Blue_but
+{
+	color: White;
+	background-color: #6BD1E7;
+	border-color:#6BD1E7;
+}
+.-Reds
+{
+	color:#B73B3C;
+}
+.-Red_but
+{
+	color: White;
+	background-color: #B73B3C;
+	border-color:#B73B3C;
+}
+

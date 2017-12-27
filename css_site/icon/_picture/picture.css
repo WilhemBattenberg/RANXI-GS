@@ -1,7 +1,11 @@
 .icon_picture
 {
-	display: flex;
+	display: block;
 	justify-content: center;
-	margin-left: 50px;
-	margin-right: 35px;
+	text-align: center;
+}
+.-ip
+{
+	display: block;
+    margin: 0 auto;
 }

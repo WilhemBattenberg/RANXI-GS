@@ -3,3 +3,11 @@
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+.disabled
+{
+	display: block !important;
+}
+.owl-nav
+{
+	display: block;
+}

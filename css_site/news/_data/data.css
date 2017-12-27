@@ -1,0 +1,15 @@
+._data
+{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color:red;
+	align-items: center;
+	padding-left: 4px;
+	padding-right: 4px;
+
+}
+.-date
+{
+		font-size: 22px;
+}

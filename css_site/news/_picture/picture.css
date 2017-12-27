@@ -1,0 +1,15 @@
+.news_picture
+{
+	background: #ccc;
+	display: flex;
+	
+}
+.-pic
+{
+	width: 190%;
+    height: 100%;
+}
+.-picture
+{
+	margin-right: 0px;
+}
