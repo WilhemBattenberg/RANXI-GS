@@ -1,3 +1,11 @@
+@media (max-width: 992px)
+{
+	.logo
+	{
+		display: flex;
+		justify-content: center;
+	}
+}
 .logo
 {
 	margin-left: 10px;

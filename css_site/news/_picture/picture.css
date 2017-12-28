@@ -9,7 +9,21 @@
 	width: 190%;
     height: 100%;
 }
+.img
+{
+	width: 140%;
+}
 .-picture
 {
 	margin-right: 0px;
+}
+.slide__image
+{
+	width: 200px;
+	height: 250px;
+}
+.project_picture
+{
+	display: flex;
+	align-items: center;
 }

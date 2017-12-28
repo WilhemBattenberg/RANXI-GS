@@ -3,11 +3,30 @@
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-.disabled
+.main
 {
-	display: block !important;
+	font-family:"Arial Narrow";
 }
-.owl-nav
+.employees
 {
-	display: block;
+	font-family:"Arial Narrow";
+}
+.icon
+{
+	font-family:"Arial Narrow";
+}
+.news
+{
+	font-family:"Arial Narrow";
+}
+.project
+{
+	font-family:"Arial Narrow";
+}
+.rates
+{
+	font-family:"Arial Narrow";
+}
+::-webkit-scrollbar { 
+    display: none; 
 }

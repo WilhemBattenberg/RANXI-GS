@@ -1,4 +1,21 @@
+@media (min-width: 992px ) and (max-width: 1200px) {
+	.-text
+	{
+		font-size: 14px !important;
+	}
+	.-picture
+	{
+		width: 40%;
+	}
+	.news_block
+	{
+		margin-right: 0px !important;
+	}
+}
+
 .news_block
 {
 	margin-right: 90px;
+	margin-top: 20px;
+	margin-left: 3px;
 }

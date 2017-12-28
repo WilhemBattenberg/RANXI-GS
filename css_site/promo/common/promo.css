@@ -11,6 +11,7 @@
 }
 .promo-overlay
 {	
+	font-family:"Arial Narrow";
 	color: Black;
 	position: absolute;
 	margin-left: 8px;

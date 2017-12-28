@@ -1,6 +1,13 @@
 .project
 {
-	background-color: #ccc;
-	margin-top: 20px;
+	background-color: #EAEAEA;
+	margin-top: 40px;
+	margin-bottom: 40px;
 	display: flex;
+}
+.visible {
+  visibility: visible;
+}
+.invisible {
+  visibility: hidden;
 }
