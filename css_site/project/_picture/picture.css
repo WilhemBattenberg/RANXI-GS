@@ -1,6 +1,16 @@
+@media (max-width: 1198px) {
+	.project_picture
+	{
+		padding-top: 10px !important;
+	}
+}
 .project_picture
 {
 
-padding-top: 10px;
+padding-top: 20px;
 padding-bottom: 10px;
+}
+.slide__image
+{
+	height: 350px;
 }

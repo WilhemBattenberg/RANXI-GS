@@ -1,7 +1,4 @@
-@media (max-width: 1200px)
+.main_menu
 {
-	.main__menu
-	{
-		font-size: 15px;
-	}
+	font-size 30px;	
 }

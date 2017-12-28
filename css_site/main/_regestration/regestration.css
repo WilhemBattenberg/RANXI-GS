@@ -1,24 +1,15 @@
-@media (max-width: 992px)
-{
+@media (max-width: 1000px) {
 	.main__regestration
 	{
-		border: 1px Solid;
-		background-color: red;
-		color:White;
-		margin-top: 10px
-		
-	}
-	.-Red
-	{
-		color:White !important;
+		visibility: hidden;
 	}
 }
-
 .main__regestration
 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	float: right;
+	margin-top: 40px;
+	margin-right : 40px;
+
 }
 .-Red
 {

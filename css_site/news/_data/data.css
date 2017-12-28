@@ -1,12 +1,13 @@
 ._data
 {
-	display: flex;
-	justify-content: center;
+	align-items: center;
 	text-align: center;
 	color:red;
 	align-items: center;
 	padding-left: 4px;
 	padding-right: 4px;
+	width: 70px;
+	height: 100px;
 
 }
 .-date

@@ -1,3 +1,9 @@
+@media (max-width: 600px){
+	.promo_ver
+	{
+		padding-left: 500px !important;
+	}
+}
 .-bord
 {
 	display: flex;

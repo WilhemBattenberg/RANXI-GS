@@ -1,39 +1,18 @@
-@media (max-width: 1200px)
+.search
 {
-	.search_text
-	{
-	border: 0px;
-	width: 50% !important;
-	height: 80%;
-	}
-	
-	.Search
-	{
-		margin-bottom: 10px;
-	}
-}
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
 
-.Search
+}
+.search__input
+{
+	width: 20%;
+	border: 0;
+}
+.search__icon
 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-.search
-{
-display: flex;
-margin-top: -10px;
-}
-.search_text
-{
-border: 0px;
-width: 30%;
-height: 80%;
-}
-.search_button
-{
-	height: 60%;
-	background: White;
-	border: 0px;
-	margin-top:-2px;
 }

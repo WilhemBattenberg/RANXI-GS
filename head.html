@@ -5,7 +5,7 @@
 	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
-
+	<script src="js/bootstrap.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css_site/set.css">
 	
@@ -16,111 +16,83 @@
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
 </head>
 <body>
-	 <!-- Container -->
-<header class="main container">
-	<div class="row">
-		<div class="col-xs-10 col-lg-10 logo">
-			 <!-- LOGO  -->
-			<a href="#"><img src="picture/logo.jpg"></a>
-		</div>
-		<div class="col-xs-1 col-lg-1 main__regestration">
-			 <!-- Regestaration text  -->
-			<a href="#" class="-Red"><big>Войти</big></a>
-		</div>
-	</div>
-	<div class="row">
-		 <!-- Menu  -->
-		<div class="col-xs-9 col-lg-9 main__menu">
-			<ul class="list-inline">
-				<li class="main__block-inline">
-					<div class="row">
-						<div class="col-xs-1">
-							<icon class="glyphicons glyphicons-pencil"></icon>
-						</div>
-						<div class="col-xs-11 -bord">
-							<a href="#" class="_href">
-								НОВОСТИ
-							</a>
-						</div>
-					</div>
-				</li>
-				<li class="main__block-inline">
-					<div class="row">
-						<div class="col-xs-1">
-							<icon class="glyphicons glyphicons-pencil"></icon>
-						</div>
-						<div class="col-xs-11 -bord">
-							<a href="#" class="_href">О ПРОЕКТЕ</a>
-						</div>
-					</div>
-				</li>
-				<li class="main__block-inline">
-					<div class="row">
-						<div class="col-xs-1">
-							<icon class="glyphicons glyphicons-pencil"></icon>
-						</div>
-						<div class="col-xs-11 -bord">
-							<a href="#" class="_href">
-								
-								ИНФОРМАЦИЯ
-								
-							</a>
-						</div>
-					</div>
-				</li>
-				<li class="main__block-inline">
-					<div class="row">
- 						<div class="col-xs-1">
- 							<icon class="glyphicons glyphicons-pencil"></icon>
-						</div>
-						<div class="col-xs-11 -bord">
- 							<a href="#" class="_href">
- 								КОНСУЛЬТАЦИЯ
- 							</a>
-						</div>
-					</div>
- 				</li>
-				<li class="main__block-inline">
-					<div class="row">
-						<div class="col-xs-1">
-							<icon class="glyphicons glyphicons-pencil"></icon>
-						</div>
-						<div class="col-xs-11 -bord">
-							<a href="#" class="_href">
-								ОБРАЗОВАНИЕ
-							</a>
-						</div>
-					</div>
-				</li>
-				<li class="main__block-inline">
-					<div class="row">
-						<div class="col-xs-1">
-							<icon class="glyphicons glyphicons-pencil"></icon>
-						</div>
-						<div class="col-xs-11 -bord">
-							<a href="#" class="_href">
-								РЕГИОНЫ
-							</a>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-		 <!-- /Menu  -->
-		<div class="col-xs-3 col-lg-3 Search">
-			<form action="" method="get" class="search">
- 				<input class="search_text" placeholder="Search" type="search">
-  				<button type="image" class="search_button" >
-  					<img src="picture/Search.png" width="20px" height="20px" />
-  				</button>
-			</form>
-		</div>
-</header>
+
+
+
+<header class="container-fluid header">
+
+    <!-- LOGO  -->
+    <div class="row logo">
+      <div class="col-md-8 col-lg-8">
+        <div class="logo__image">
+          <img src="picture/logo.jpg" alt="logo">
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-4 sm-invisible ">
+        <a href="#" class="-Red main__regestration">Войти</a>
+      </div>
+    </div>
+    <!-- /LOGO -->
+
+    <!-- MENU  -->
+    <div class="row menu_primary">
+      <div class="col-md-8 col-lg-8 menu_primary__nav">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-wrapper">
+            <span class="sr-only">Развернуть</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+  
+          <div class="collapse navbar-collapse" id="menu-wrapper">
+            <ul class="nav navbar-nav main_menu">
+              <li class="nav__item nav_size_primary">
+                <a class="-Red" href="#">Новости</a>
+              </li>
+              <li class="nav__item nav_size_primary">
+                <a class="-Red" href="#">О проекте</a>
+              </li>
+              <li class="nav__item nav_size_primary">
+                <a class="-Red" href="#">Информация</a>
+              </li>
+              <li class="nav__item nav_size_primary">
+                <a class="-Red" href="#">Консультации</a>
+              </li>
+              <li class="nav__item nav_size_primary">
+                <a class="-Red" href="#">Образование</a>
+              </li>
+              <li class="nav__item nav_size_primary">
+                <a class="-Red" href="#">Регионы</a>
+              </li>
+              <li class="nav__item_last nav_size_primary hidden-md hidden-lg">
+                  <a class="-Red" href="#">Войти</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+        <!-- /MENU -->
+
+        <!-- MENU SEARCH  -->
+      <div class="col-md-4 col-lg-4 menu_primary_search">
+        <div class="search">
+          <input class="search__input" type="text" placeholder="Search">
+          <i class="search__icon glyphicon glyphicon-search"></i>
+        </div>
+      </div>
+      <!-- /MENU SEARCH -->
+    </div>
+  </header>
+  <!-- /HEADER -->
+
  <!-- Promo -->
-<div class="promo visible-lg">
+<div class="promo ">
 		<div class="row">
 			<div class="col-xs-12 promo-picture">
 				<img src="picture\promo.jpg" class="img-responsive" width="100%" height="60%">
@@ -133,7 +105,7 @@
 						<span class="text-overlay">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt utlabore et 	dolore magna aliqua. Ut enim ad minim veniam, quis nostud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. 	Duls aute irure dolor im reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</span>
 						<form>
 						<textarea class="promo_text-input"></textarea>	
-						<button class="btn btn-primary btn-lg button-overlay">Задать вопрос</button>
+						<button class="btn btn-primary btn-lg button-overlay promo_but">Задать вопрос</button>
 						</form>
 						
 						</div>
@@ -150,24 +122,24 @@
 		<div class="row">
 			<div class="col-xs-3 col-lg-3 icon_picture">
 						<img src="picture/icon/1.png" class="-ip" width="120px" height="100px" >
-					<div>
+					<div class="icon__tex">
 						Профессиональные эксперты в области гос. и корпоративных закупок
 					</div>
 			</div>
 			<div class="col-xs-3 col-lg-3 icon_picture">
 						<img src="picture/icon/2.png" width="120px" height="100px" class="-ip">
-					<div>	Практика ФАС</div>
+					<div class="icon__tex">	Практика ФАС</div>
 			</div>
 			<div class="col-xs-3 col-lg-3 icon_picture">
 						<img src="picture/icon/3.png" width="120px" height="100px">
 
-					<div>
+					<div class="icon__tex">
 						Он-лайн поддержка
 					</div>
 			</div>
 			<div class="col-xs-3 col-lg-3 icon_picture" class="-ip">
 						<img src="picture/icon/4.png" width="120px" height="100px">
-					<div>
+					<div class="icon__tex">
 						Подготовка необходимых документов
 					</div>
 			</div>
@@ -249,389 +221,370 @@
 		<!-- News-rows 1  -->
 		
 		<div class="owl-item">
-			 <div class="row">
-				<div class="col-lg-12">
-					<div class="item">	
-						<div class="row">
-							<div class="col-lg-3 news_block">
-								<div class="news_picture">
-									<div class="_data">
-										<h1 class="-date">12 апреля</h1>
-									</div>
-									<div class="-picture">
-										<img src="picture/logo.jpg" width="120%" height="100%">
-									</div>
-								</div>
-								<div class="news_text">
-									<h2 class="-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 		aliqua.</h2>
-								</div>
-							</div>
-							<div class="col-lg-3 news_block">
-								<div class="news_picture">
-									<div class="_data">
-										<h1 class="-date">12 апреля</h1>
-									</div>
-									<div class="-picture">
-										<img src="picture/logo.jpg" width="120%" height="100%">
-									</div>
-								</div>
-								<div class="news_text">
-									<h2 class="-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h2>
-								</div>
-							</div>
-							<div class="col-lg-3 news_block">
-								<div class="news_picture">
-									<div class="_data">
-										<h1 class="-date">12 апреля</h1>
-									</div>
-									<div class="-picture">
-										<img src="picture/logo.jpg" width="120%" height="100%">
-									</div>
-								</div>
-								<div class="news_text">
-									<h2 class="-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
-								</div>
-							</div>
+			<div class="item">	
+				<div class=" news_block">
+					<div class="news_picture">
+						<div class="_data">
+							<h1 class="-date">12 апреля</h1>
+						</div>
+						<div class="-picture">
+							<img src="picture/logo.jpg" width="100px" height="100px">
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-12">
-					<div class="item">
-						<div class="row">
-							<div class="col-lg-3 news_block">
-								<div class="news_picture">
-									<div class="_data">
-										<h1 class="-date">12 апреля</h1>
-									</div>
-									<div class="-picture">
-										<img src="picture/logo.jpg" width="120%" height="100%">
-									</div>
-								</div>
-								<div class="news_text">
-									<h2 class="-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h2>
-								</div>
+					<div class="news_text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna	aliqua
+					</div>
+					</div>
+					<div class="news_block">
+						<div class="news_picture">
+							<div class="_data">
+								<h1 class="-date">13 апреля</h1>
 							</div>
-							<div class="col-lg-3 news_block">
-								<div class="news_picture">
-									<div class="_data">
-										<h1 class="-date">13 апреля</h1>
-									</div>
-									<div class="-picture">
-										<img src="picture/logo.jpg"width="120%" height="100%">
-									</div>
-								</div>
-								<div class="news_text">
-									<h2 class="-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h2>
-								</div>
-							</div>
-							<div class="col-lg-3 news_block">
-								<div class="news_picture">
-									<div class="_data">
-										<h1 class="-date">14 апреля</h1>
-									</div>
-									<div class="-picture">
-										<img src="picture/logo.jpg" width="120%" height="100%">
-									</div>
-								</div>
-								<div class="news_text">
-									<h2 class="-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h2>
-								</div>
+							<div class="-picture">
+								<img src="picture/logo.jpg" width="180%" height="100%">
 							</div>
 						</div>
-					</div>
-				</div>
-			 </div>
-		</div>
-		
-		<!-- News-rows 2  -->
-		
-		<div class="owl-item">
-			 <div class="row">
-				<div class="col-lg-12">
-					<div class="item">	
-						<div class="row">
-							<div class="col-lg-3 news_block">
-								<div class="news_picture">
-									<div class="_data">
-										<h1 class="-date">12 апреля</h1>
-									</div>
-									<div class="-picture">
-										<img src="picture/logo.jpg" width="120%" height="100%">
-									</div>
-								</div>
-								<div class="news_text">
-									<h2 class="-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 		aliqua.</h2>
-								</div>
-							</div>
-							<div class="col-lg-3 news_block">
-								<div class="news_picture">
-									<div class="_data">
-										<h1 class="-date">12 апреля</h1>
-									</div>
-									<div class="-picture">
-										<img src="picture/logo.jpg" width="120%" height="100%">
-									</div>
-								</div>
-								<div class="news_text">
-									<h2 class="-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h2>
-								</div>
-							</div>
-							<div class="col-lg-3 news_block">
-								<div class="news_picture">
-									<div class="_data">
-										<h1 class="-date">12 апреля</h1>
-									</div>
-									<div class="-picture">
-										<img src="picture/logo.jpg" width="120%" height="100%">
-									</div>
-								</div>
-								<div class="news_text">
-									<h2 class="-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
-								</div>
-							</div>
+						<div class="news_text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-12">
-					<div class="item">
-						<div class="row">
-							<div class="col-lg-3 news_block">
-								<div class="news_picture">
-									<div class="_data">
-										<h1 class="-date">12 апреля</h1>
-									</div>
-									<div class="-picture">
-										<img src="picture/logo.jpg" width="120%" height="100%">
-									</div>
-								</div>
-								<div class="news_text">
-									<h2 class="-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h2>
-								</div>
-							</div>
-							<div class="col-lg-3 news_block">
-								<div class="news_picture">
-									<div class="_data">
-										<h1 class="-date">13 апреля</h1>
-									</div>
-									<div class="-picture">
-										<img src="picture/logo.jpg"width="120%" height="100%">
-									</div>
-								</div>
-								<div class="news_text">
-									<h2 class="-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h2>
-								</div>
-							</div>
-							<div class="col-lg-3 news_block">
-								<div class="news_picture">
-									<div class="_data">
-										<h1 class="-date">14 апреля</h1>
-									</div>
-									<div class="-picture">
-										<img src="picture/logo.jpg" width="120%" height="100%">
-									</div>
-								</div>
-								<div class="news_text">
-									<h2 class="-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h2>
-								</div>
-							</div>
+				</div>			
+			</div>	
+			<div class="owl-item">
+				
+				<div class=" news_block">
+					<div class="news_picture">
+						<div class="_data">
+							<h1 class="-date">14 апреля</h1>
+						</div>
+						<div class="-picture">
+							<img src="picture/logo.jpg" width="120%" height="100%">
 						</div>
 					</div>
-				</div>
-			 </div>
-		</div>
-
-<!-- News-rows 3  -->
-
-		<div class="owl-item">
-			 <div class="row">
-				<div class="col-lg-12">
-					<div class="item">	
-						<div class="row">
-							<div class="col-lg-3 news_block">
-								<div class="news_picture">
-									<div class="_data">
-										<h1 class="-date">12 апреля</h1>
-									</div>
-									<div class="-picture">
-										<img src="picture/logo.jpg" width="120%" height="100%">
-									</div>
-								</div>
-								<div class="news_text">
-									<h2 class="-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 		aliqua.</h2>
-								</div>
+					<div class="news_text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna	aliqua
+					</div>
+					</div>
+					<div class="news_block">
+						<div class="news_picture">
+							<div class="_data">
+								<h1 class="-date">15 апреля</h1>
 							</div>
-							<div class="col-lg-3 news_block">
-								<div class="news_picture">
-									<div class="_data">
-									<h1 class="-date">12 апреля</h1>
-									</div>
-									<div class="-picture">
-										<img src="picture/logo.jpg" width="120%" height="100%">
-									</div>
-								</div>
-								<div class="news_text">
-									<h2 class="-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h2>
-								</div>
-							</div>
-							<div class="col-lg-3 news_block">
-								<div class="news_picture">
-									<div class="_data">
-										<h1 class="-date">12 апреля</h1>
-									</div>
-									<div class="-picture">
-										<img src="picture/logo.jpg" width="120%" height="100%">
-									</div>
-								</div>
-								<div class="news_text">
-									<h2 class="-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
-								</div>
+							<div class="-picture">
+								<img src="picture/logo.jpg" width="180%" height="100%">
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-lg-12">
-					<div class="item">
-						<div class="row">
-							<div class="col-lg-3 news_block">
-								<div class="news_picture">
-									<div class="_data">
-										<h1 class="-date">12 апреля</h1>
-									</div>
-									<div class="-picture">
-										<img src="picture/logo.jpg" width="120%" height="100%">
-									</div>
-								</div>
-								<div class="news_text">
-									<h2 class="-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h2>
-								</div>
-							</div>
-							<div class="col-lg-3 news_block">
-								<div class="news_picture">
-									<div class="_data">
-										<h1 class="-date">13 апреля</h1>
-									</div>
-									<div class="-picture">
-										<img src="picture/logo.jpg"width="120%" height="100%">
-									</div>
-								</div>
-								<div class="news_text">
-									<h2 class="-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h2>
-								</div>
-							</div>
-							<div class="col-lg-3 news_block">
-								<div class="news_picture">
-									<div class="_data">
-										<h1 class="-date">14 апреля</h1>
-									</div>
-									<div class="-picture">
-										<img src="picture/logo.jpg" width="120%" height="100%">
-									</div>
-								</div>
-								<div class="news_text">
-									<h2 class="-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h2>
-								</div>
-							</div>
+						<div class="news_text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
 						</div>
 					</div>
-				</div>
-			 </div>
-		</div>
-
-<!-- News-rows 4  -->
-		<div class="owl-item">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="item">	
-						<div class="row">
-							<div class="col-lg-3 news_block">
-								<div class="news_picture">
-									<div class="_data">
-										<h1 class="-date">12 апреля</h1>
-									</div>
-									<div class="-picture">
-										<img src="picture/logo.jpg" width="120%" height="100%">
-									</div>
-								</div>
-								<div class="news_text">
-									<h2 class="-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 		aliqua.</h2>
-								</div>
-							</div>
-							<div class="col-lg-3 news_block">
-								<div class="news_picture">
-									<div class="_data">
-										<h1 class="-date">12 апреля</h1>
-									</div>
-									<div class="-picture">
-										<img src="picture/logo.jpg" width="120%" height="100%">
-									</div>
-								</div>
-								<div class="news_text">
-									<h2 class="-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h2>
-								</div>
-							</div>
-							<div class="col-lg-3 news_block">
-								<div class="news_picture">
-									<div class="_data">
-										<h1 class="-date">12 апреля</h1>
-									</div>
-									<div class="-picture">
-										<img src="picture/logo.jpg" width="120%" height="100%">
-									</div>
-								</div>
-								<div class="news_text">
-									<h2 class="-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
-								</div>
-							</div>
+						
+			</div>	
+				<div class="owl-item">
+				
+				<div class=" news_block">
+					<div class="news_picture">
+						<div class="_data">
+							<h1 class="-date">16 апреля</h1>
+						</div>
+						<div class="-picture">
+							<img src="picture/logo.jpg" width="120%" height="100%">
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-12">
-					<div class="item">
-						<div class="row">
-							<div class="col-lg-3 news_block">
-								<div class="news_picture">
-									<div class="_data">
-										<h1 class="-date">12 апреля</h1>
-									</div>
-									<div class="-picture">
-										<img src="picture/logo.jpg" width="120%" height="100%">
-									</div>
-								</div>
-								<div class="news_text">
-									<h2 class="-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h2>
-								</div>
+					<div class="news_text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna	aliqua
+					</div>
+					</div>
+					<div class="news_block">
+						<div class="news_picture">
+							<div class="_data">
+								<h1 class="-date">17 апреля</h1>
 							</div>
-							<div class="col-lg-3 news_block">
-								<div class="news_picture">
-									<div class="_data">
-										<h1 class="-date">13 апреля</h1>
-									</div>
-									<div class="-picture">
-										<img src="picture/logo.jpg"width="120%" height="100%">
-									</div>
-								</div>
-								<div class="news_text">
-									<h2 class="-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h2>
-								</div>
-							</div>
-							<div class="col-lg-3 news_block">
-								<div class="news_picture">
-									<div class="_data">
-										<h1 class="-date">14 апреля</h1>
-									</div>
-									<div class="-picture">
-										<img src="picture/logo.jpg" width="120%" height="100%">
-									</div>
-								</div>
-								<div class="news_text">
-									<h2 class="-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h2>
-								</div>
+							<div class="-picture">
+								<img src="picture/logo.jpg" width="180%" height="100%">
 							</div>
 						</div>
+						<div class="news_text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+						</div>
 					</div>
-				</div>
-			 </div>
-		</div>
+						
+			</div>	
+				<div class="owl-item">
+				
+				<div class=" news_block">
+					<div class="news_picture">
+						<div class="_data">
+							<h1 class="-date">18 апреля</h1>
+						</div>
+						<div class="-picture">
+							<img src="picture/logo.jpg" width="120%" height="100%">
+						</div>
+					</div>
+					<div class="news_text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna	aliqua
+					</div>
+					</div>
+					<div class="news_block">
+						<div class="news_picture">
+							<div class="_data">
+								<h1 class="-date">19 апреля</h1>
+							</div>
+							<div class="-picture">
+								<img src="picture/logo.jpg" width="180%" height="100%">
+							</div>
+						</div>
+						<div class="news_text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+						</div>
+					</div>
+						
+			</div>			
+				
+	<div class="owl-item">
+				
+				<div class=" news_block">
+					<div class="news_picture">
+						<div class="_data">
+							<h1 class="-date">20 апреля</h1>
+						</div>
+						<div class="-picture">
+							<img src="picture/logo.jpg" width="120%" height="100%">
+						</div>
+					</div>
+					<div class="news_text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna	aliqua
+					</div>
+					</div>
+					<div class="news_block">
+						<div class="news_picture">
+							<div class="_data">
+								<h1 class="-date">21 апреля</h1>
+							</div>
+							<div class="-picture">
+								<img src="picture/logo.jpg" width="180%" height="100%">
+							</div>
+						</div>
+						<div class="news_text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+						</div>
+					</div>
+						
+			</div>
+			<div class="owl-item">
+				
+				<div class=" news_block">
+					<div class="news_picture">
+						<div class="_data">
+							<h1 class="-date">22 апреля</h1>
+						</div>
+						<div class="-picture">
+							<img src="picture/logo.jpg" width="120%" height="100%">
+						</div>
+					</div>
+					<div class="news_text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna	aliqua
+					</div>
+					</div>
+					<div class="news_block">
+						<div class="news_picture">
+							<div class="_data">
+								<h1 class="-date">23 апреля</h1>
+							</div>
+							<div class="-picture">
+								<img src="picture/logo.jpg" width="180%" height="100%">
+							</div>
+						</div>
+						<div class="news_text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+						</div>
+					</div>
+						
+			</div>	
+			<div class="owl-item">
+				
+				<div class=" news_block">
+					<div class="news_picture">
+						<div class="_data">
+							<h1 class="-date">18 апреля</h1>
+						</div>
+						<div class="-picture">
+							<img src="picture/logo.jpg" width="120%" height="100%">
+						</div>
+					</div>
+					<div class="news_text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna	aliqua
+					</div>
+					</div>
+					<div class="news_block">
+						<div class="news_picture">
+							<div class="_data">
+								<h1 class="-date">19 апреля</h1>
+							</div>
+							<div class="-picture">
+								<img src="picture/logo.jpg" width="180%" height="100%">
+							</div>
+						</div>
+						<div class="news_text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+						</div>
+					</div>
+						
+			</div>			
+				
+	<div class="owl-item">
+				
+				<div class=" news_block">
+					<div class="news_picture">
+						<div class="_data">
+							<h1 class="-date">20 апреля</h1>
+						</div>
+						<div class="-picture">
+							<img src="picture/logo.jpg" width="120%" height="100%">
+						</div>
+					</div>
+					<div class="news_text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna	aliqua
+					</div>
+					</div>
+					<div class="news_block">
+						<div class="news_picture">
+							<div class="_data">
+								<h1 class="-date">21 апреля</h1>
+							</div>
+							<div class="-picture">
+								<img src="picture/logo.jpg" width="180%" height="100%">
+							</div>
+						</div>
+						<div class="news_text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+						</div>
+					</div>
+						
+			</div>
+			<div class="owl-item">
+				
+				<div class=" news_block">
+					<div class="news_picture">
+						<div class="_data">
+							<h1 class="-date">22 апреля</h1>
+						</div>
+						<div class="-picture">
+							<img src="picture/logo.jpg" width="120%" height="100%">
+						</div>
+					</div>
+					<div class="news_text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna	aliqua
+					</div>
+					</div>
+					<div class="news_block">
+						<div class="news_picture">
+							<div class="_data">
+								<h1 class="-date">23 апреля</h1>
+							</div>
+							<div class="-picture">
+								<img src="picture/logo.jpg" width="180%" height="100%">
+							</div>
+						</div>
+						<div class="news_text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+						</div>
+					</div>
+						
+			</div>		
+			<div class="owl-item">
+				
+				<div class=" news_block">
+					<div class="news_picture">
+						<div class="_data">
+							<h1 class="-date">18 апреля</h1>
+						</div>
+						<div class="-picture">
+							<img src="picture/logo.jpg" width="120%" height="100%">
+						</div>
+					</div>
+					<div class="news_text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna	aliqua
+					</div>
+					</div>
+					<div class="news_block">
+						<div class="news_picture">
+							<div class="_data">
+								<h1 class="-date">19 апреля</h1>
+							</div>
+							<div class="-picture">
+								<img src="picture/logo.jpg" width="180%" height="100%">
+							</div>
+						</div>
+						<div class="news_text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+						</div>
+					</div>
+						
+			</div>			
+				
+	<div class="owl-item">
+				
+				<div class=" news_block">
+					<div class="news_picture">
+						<div class="_data">
+							<h1 class="-date">20 апреля</h1>
+						</div>
+						<div class="-picture">
+							<img src="picture/logo.jpg" width="120%" height="100%">
+						</div>
+					</div>
+					<div class="news_text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna	aliqua
+					</div>
+					</div>
+					<div class="news_block">
+						<div class="news_picture">
+							<div class="_data">
+								<h1 class="-date">21 апреля</h1>
+							</div>
+							<div class="-picture">
+								<img src="picture/logo.jpg" width="180%" height="100%">
+							</div>
+						</div>
+						<div class="news_text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+						</div>
+					</div>
+						
+			</div>
+			<div class="owl-item">
+				
+				<div class=" news_block">
+					<div class="news_picture">
+						<div class="_data">
+							<h1 class="-date">22 апреля</h1>
+						</div>
+						<div class="-picture">
+							<img src="picture/logo.jpg" width="100px" height="100px">
+						</div>
+					</div>
+					<div class="news_text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna	aliqua
+					</div>
+					</div>
+					<div class="news_block">
+						<div class="news_picture">
+							<div class="_data">
+								<h1 class="-date">23 апреля</h1>
+							</div>
+							<div class="-picture">
+								<img src="picture/logo.jpg" width="180%" height="100%">
+							</div>
+						</div>
+						<div class="news_text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+						</div>
+					</div>
+						
+			</div>				
+		</div>				
+		</div>	
 	</div>
 <!-- Script carusel  -->
 	<script type="text/javascript">
@@ -643,7 +596,15 @@
 	    dotClass: "dot",
 	    autoplay: true,
 	    autoplayTimeout: 100,
-	    items:1
+	   	  0:{
+            items:1
+        },
+        1000:{
+            items:2
+        },
+        1200:{
+            items:3
+        }
 	})
 	</script>
 </div>
@@ -720,10 +681,11 @@
 	<div class="row">
 		<div class="col-lg-3">
 			<h2 class="decaration -Gray">BASIC</h2>
-			Lorem ipsum dolor sit amet,
+			<span class="rates__text">Lorem ipsum dolor sit amet,
 			consectetur adipiscing elit,
 			sed do eiusmod tempor incididunt
 			ut labore et dolore magna aliqua.
+			</span>
 			<hr>
 			<h3 class="-Gray">Free</h3>
 			<hr>
@@ -731,10 +693,10 @@
 		</div>
 		<div class="col-lg-3">
 			<h2 class="decaration -Green ">PLUS</h2>
-			Lorem ipsum dolor sit amet,
+			<span class="rates__text">Lorem ipsum dolor sit amet,
 			consectetur adipiscing elit,
 			sed do eiusmod tempor incididunt
-			ut labore et dolore magna aliqua.
+			ut labore et dolore magna aliqua.</span>
 			<hr>
 			<h3 class=" -Green">990 руб. <span><small>в год</small></span></h3>
 			<hr>
@@ -742,10 +704,10 @@
 		</div>
 		<div class="col-lg-3">
 			<h2 class="decaration -Blue -btn_Width ">PREMIUM</h2>
-			Lorem ipsum dolor sit amet,
+			<span class="rates__text">Lorem ipsum dolor sit amet,
 			consectetur adipiscing elit,
 			sed do eiusmod tempor incididunt
-			ut labore et dolore magna aliqua.
+			ut labore et dolore magna aliqua.</span>
 			<hr>
 			<h3 class=" -Blue">1 990 руб. <span><small>в год</small></span></h3>
 			<hr>
@@ -753,10 +715,10 @@
 		</div>
 			<div class="col-lg-3">
 			<h2 class="decaration -Reds">PROFESSIONAL</h2>
-			Lorem ipsum dolor sit amet,
+			<span class="rates__text">Lorem ipsum dolor sit amet,
 			consectetur adipiscing elit,
 			sed do eiusmod tempor incididunt
-			ut labore et dolore magna aliqua.
+			ut labore et dolore magna aliqua.</span>
 			<hr>
 			<h3 class="-Reds">5 990 руб. <span><small>в год</small></span></h3>
 			<hr>
